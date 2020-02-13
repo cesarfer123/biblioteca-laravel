@@ -15,3 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 
 });
+
+
+// Route::get('permiso/{nombre}', "PermissionController@index");
+
+
+Route::get('user/{id}/profile',"PermissionController@index")->name('profile');
+
